@@ -1,0 +1,81 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    border: 1px dotted red;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+}
+
+.left-col {
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    text-align: center;
+    
+    background-color: rgb(219, 255, 172);
+}
+
+.right-col {
+    width: 60%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgb(255, 150, 150);
+}
+
+.title {
+    height: 150px;
+
+    margin-top: 45%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.photo-credit {
+    margin-bottom: 5%;
+}
+
+.form-bg {
+    padding: 0 60px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: rgb(203, 255, 120);
+}
+
+.form-content {
+    
+}
+
+.form-item {
+    /* width: 40%; */
+
+    display: flex;
+    flex-direction: column;
+}
+
+.create-account-button {
+    margin-left: 60px;
+}
