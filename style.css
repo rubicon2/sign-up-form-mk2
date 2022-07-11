@@ -1,19 +1,56 @@
+@font-face {
+    font-family: "Norse Bold";
+    src: url("fonts/Norse-Bold.otf");
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("fonts/Roboto/Roboto-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("fonts/Roboto/Roboto-Italic.ttf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("fonts/Roboto/Roboto-BoldItalic.ttf");
+    font-weight: bold;
+    font-style: italic;
+}
+
 html {
     box-sizing: border-box;
 }
 
 *, *::before, *::after {
     box-sizing: inherit;
-    border: 1px dotted red;
-    margin: 0;
-    padding: 0;
+    /* border: 1px dotted red; */
 }
 
 body {
     width: 100vw;
     height: 100vh;
 
+    margin: 0;
+    padding: 0;
+
     display: flex;
+
+    font-family: Roboto;
+    font-size: 18px;
+}
+
+small {
+    font-size: 12px;
 }
 
 .left-col {
@@ -27,6 +64,37 @@ body {
     text-align: center;
     
     background-color: rgb(219, 255, 172);
+    background-image: url("img/halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover;
+}
+
+.title {
+    height: 150px;
+
+    margin-top: 30%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.469);
+
+    font-family: "Norse Bold";
+    font-size: 62px;
+}
+
+.title>img {
+    height: 80%;
+}
+
+.photo-credit {
+    margin-bottom: 3%;
+}
+
+.photo-credit,
+.photo-credit>* {
+    color: #FFF;
 }
 
 .right-col {
@@ -35,47 +103,80 @@ body {
 
     display: flex;
     flex-direction: column;
-
-    background-color: rgb(255, 150, 150);
-}
-
-.title {
-    height: 150px;
-
-    margin-top: 45%;
-
-    display: flex;
     justify-content: center;
-    align-items: center;
 
-    color: #FFF;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgb(245, 245, 245);
 }
 
-.photo-credit {
-    margin-bottom: 5%;
+.right-col p,
+.right-col .spiel,
+.right-col .form-bg {
+    /* 
+    Not using shorthand so does not 
+    conflict with .form-bg padding 
+    */
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.spiel {
+    margin-bottom: 20px;
+}
+
+.create-account-button {
+    margin-top: 40px;
+    margin-left: 60px;
+
+    padding: 15px 60px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #596D48;
+    color: #FFF;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.signup-form input {
+    padding: 5px;
+
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+
+    font-family: Roboto;
+    font-size: 18px;
 }
 
 .form-bg {
-    padding: 0 60px;
+    margin-top: 40px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    background-color: rgb(255, 255, 255);
+
+    box-shadow: 0px 3px 20px 2px rgba(0, 0, 0, 0.437);
+}
+
+.form-content {
+    width: 75%;
 
     display: flex;
     flex-wrap: wrap;
 
-    background-color: rgb(203, 255, 120);
-}
-
-.form-content {
-    
+    gap: 20px 60px;
 }
 
 .form-item {
-    /* width: 40%; */
-
     display: flex;
     flex-direction: column;
 }
 
-.create-account-button {
-    margin-left: 60px;
+.login-link {
+    text-decoration: none;
+    font-weight: bold;
+
+    color: #596D48; 
 }
