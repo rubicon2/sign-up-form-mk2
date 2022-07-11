@@ -63,7 +63,7 @@ small {
 
     text-align: center;
     
-    background-color: rgb(219, 255, 172);
+    background-color: #596D48;
     background-image: url("img/halie-west-25xggax4bSA-unsplash.jpg");
     background-size: cover;
 }
@@ -101,9 +101,11 @@ small {
     width: 60%;
     height: 100%;
 
+    padding-top: 3%;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 
     background-color: rgb(245, 245, 245);
 }
