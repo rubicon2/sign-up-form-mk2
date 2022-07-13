@@ -141,6 +141,16 @@ small {
     font-weight: bold;
 }
 
+.create-account-button:hover {
+    background-color: #728c53;
+
+    cursor: pointer;
+}
+
+.create-account-button:active {
+    background-color: #304735;
+}
+
 .signup-form input {
     padding: 5px;
 
@@ -185,4 +195,12 @@ small {
     font-weight: bold;
 
     color: #596D48; 
+}
+
+.login-link:hover {
+    color: #728c53;
+}
+
+.login-link:active {
+    color: #304735;
 }
