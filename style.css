@@ -117,17 +117,17 @@ small {
     Not using shorthand so does not 
     conflict with .form-bg padding 
     */
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .spiel {
-    margin-bottom: 20px;
+    margin-bottom: 1%;
 }
 
 .create-account-button {
-    margin-top: 40px;
-    margin-left: 60px;
+    margin-top: 4%;
+    margin-left: 5%;
 
     padding: 15px 60px;
 
@@ -152,7 +152,7 @@ small {
 }
 
 .form-bg {
-    margin-top: 40px;
+    margin-top: 5%;
 
     padding-top: 20px;
     padding-bottom: 20px;
@@ -160,6 +160,10 @@ small {
     background-color: rgb(255, 255, 255);
 
     box-shadow: 0px 3px 20px 2px rgba(0, 0, 0, 0.437);
+}
+
+.form-bg>h3 {
+    margin-top: 0;
 }
 
 .form-content {
