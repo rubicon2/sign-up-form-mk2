@@ -29,27 +29,27 @@
                     <div class="form-content">
                         <div class="form-item">
                             <label for="forename"><small>FORENAME</small></label>
-                            <input type="text" name="forename" id="forename">
+                            <input type="text" name="forename" id="forename" required autocomplete="name" placeholder="Noriko">
                         </div>
                         <div class="form-item">
                             <label for="surname"><small>SURNAME</small></label>
-                            <input type="text" name="surname" id="surname">
+                            <input type="text" name="surname" id="surname" required autocomplete="family-name" placeholder="Tanaka">
                         </div>
                         <div class="form-item">
                             <label for="email"><small>EMAIL</small></label>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" required autocomplete="email" placeholder="noriko@megaemail.jp">
                         </div>
                         <div class="form-item">
                             <label for="tel"><small>TELEPHONE</small></label>
-                            <input type="tel" name="tel" id="tel">
+                            <input type="tel" name="tel" id="tel" required autocomplete="tel" placeholder="000-0000-0000" pattern="^\d{3}[ -]\d{4}[ -]\d{4}$">
                         </div>
                         <div class="form-item">
                             <label for="password"><small>PASSWORD</small></label>
-                            <input type="password" name="password" id="password">
+                            <input type="password" name="password" id="password" required autocomplete="new-password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
                         </div>
                         <div class="form-item">
                             <label for="password-confirm"><small>CONFIRM PASSWORD</small></label>
-                            <input type="password" name="password_confirm" id="passworm-confirm">
+                            <input type="password" name="password_confirm" id="passworm-confirm" required autocomplete="new-password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
                         </div>
                     </div>
                 </div>
