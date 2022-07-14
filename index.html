@@ -46,10 +46,12 @@
                         <div class="form-item">
                             <label for="password"><small>PASSWORD</small></label>
                             <input type="password" name="password" id="password" required autocomplete="new-password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                            <small class="error-message invisible">Please use an upper/lowercase letter, <br> a number and at least 8 characters.</small>
                         </div>
                         <div class="form-item">
                             <label for="password-confirm"><small>CONFIRM PASSWORD</small></label>
                             <input type="password" name="password_confirm" id="passworm-confirm" required autocomplete="new-password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                            <small class="error-message invisible">Passwords do not match</small>
                         </div>
                     </div>
                 </div>

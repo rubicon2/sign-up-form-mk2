@@ -204,3 +204,12 @@ small {
 .login-link:active {
     color: #304735;
 }
+
+.error-message {
+    margin-top: 2px;
+    color: red;
+}
+
+.invisible {
+    opacity: 0;
+}
