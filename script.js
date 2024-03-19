@@ -13,17 +13,17 @@ createAccountButton.addEventListener("click", () => {
         form.requestSubmit();
 });
 
-password.addEventListener("input", (e) => checkPassword());
 passwordConfirm.addEventListener("input", (e) => checkPasswordsMatch());
 
 const checkPassword = function() {
     if (password.value != "") {
         let passwordOK = passwordPattern.test(password.value);
         if (passwordOK) {
+            passwordError.innerText = "Password is valid!";
             passwordError.classList.add("invisible");
             return true;
         } else {
-            passwordError.innerText = "Please use an upper/lowercase letter, \n a number and at least 8 characters";
+            passwordError.innerText = "Please use an upper/lowercase letter, a number and at least 8 characters";
             passwordError.classList.remove("invisible");
         }
     } else {
@@ -35,9 +35,11 @@ const checkPassword = function() {
 
 const checkPasswordsMatch = function() {
     if (password.value === passwordConfirm.value) {
+        passwordConfirmError.innerText = "Passwords now match!";
         passwordConfirmError.classList.add("invisible");
         return true;
     } else {
+        passwordConfirmError.innerText = "Passwords do not match";
         passwordConfirmError.classList.remove("invisible");
         return false;
     }

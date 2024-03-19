@@ -22,7 +22,7 @@
                 in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.
             </h3>
             <h3 class="spiel">You <em>know</em> you want to.</h3>
-            <form action="#" method="post" class="signup-form">
+            <form action="#" method="post" class="signup-form" aria-label="Sign up form" tabindex="0">
                 <div class="form-bg">
                     <h3>Let's do this!</h3>
                     <div class="form-content">
@@ -44,13 +44,13 @@
                         </div>
                         <div class="form-item">
                             <label for="password"><small>PASSWORD</small></label>
-                            <input type="password" name="password" id="password" required autocomplete="new-password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
-                            <small class="error-message invisible">Please use an upper/lowercase letter, <br> a number and at least 8 characters</small>
+                            <input type="password" name="password" id="password" required aria-describedby="password-error" autocomplete="new-password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                            <small id="password-error" class="error-message invisible" role="alert"></small>
                         </div>
                         <div class="form-item">
                             <label for="password-confirm"><small>CONFIRM PASSWORD</small></label>
-                            <input type="password" name="password_confirm" id="password-confirm" required autocomplete="new-password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
-                            <small class="error-message invisible">Passwords do not match</small>
+                            <input type="password" name="password_confirm" id="password-confirm" required aria-describedby="password-confirm-error" autocomplete="new-password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                            <small id="password-confirm-error" class="error-message invisible" role="alert"></small>
                         </div>
                     </div>
                 </div>
