@@ -13,7 +13,11 @@ createAccountButton.addEventListener("click", () => {
         form.requestSubmit();
 });
 
-passwordConfirm.addEventListener("input", (e) => checkPasswordsMatch());
+password.addEventListener("input", () => checkPassword());
+password.addEventListener("focusout", () => checkPasswordsMatch());
+passwordConfirm.addEventListener("input", () => {
+    if (passwordConfirm.value !== "") checkPasswordsMatch()
+});
 
 const checkPassword = function() {
     if (password.value != "") {
