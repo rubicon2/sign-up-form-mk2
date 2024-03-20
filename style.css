@@ -110,7 +110,7 @@ small {
 }
 
 .photo-credit {
-    margin-bottom: 3%;
+    padding: .5rem 0;
 }
 
 .photo-credit,
