@@ -1,4 +1,4 @@
-const form = document.querySelector(".signup-form");
+const form = document.querySelector("#signup-form");
 const createAccountButton = document.querySelector(".create-account-button");
 
 const password = document.getElementById("password");
