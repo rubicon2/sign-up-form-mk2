@@ -49,7 +49,7 @@ body {
     grid-template-columns: 2fr 3fr;
 
     font-family: Roboto;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 h1 {
@@ -87,7 +87,7 @@ h2 {
 }
 
 small {
-    font-size: 12px;
+    font-size: 0.9rem;
 }
 
 .left-col {
@@ -196,7 +196,7 @@ small {
     border-radius: 5px;
 
     font-family: Roboto;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .form-bg {
