@@ -52,6 +52,14 @@ body {
     font-size: 18px;
 }
 
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
 .skip-link {
     position: absolute;
     color: white;
@@ -97,19 +105,22 @@ small {
 }
 
 .title {
-    height: 150px;
-
     margin-top: 30%;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    color: #FFF;
-    background-color: var(--transparent-background-color);
+    padding: 1.5rem 0;
 
+    background-color: var(--transparent-background-color);
+}
+
+.odin-header-text {
+    margin: 0;
+    color: #FFF;
     font-family: "Norse Bold";
-    font-size: 62px;
+    font-size: 7rem;
 }
 
 .title>img {
