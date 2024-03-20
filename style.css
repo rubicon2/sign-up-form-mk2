@@ -27,9 +27,12 @@
     font-style: italic;
 }
 
-html {
+:root {
     box-sizing: border-box;
+    --warning-color: rgb(200, 0, 0);
+    --transparent-background-color: rgba(0, 0, 0, 0.469)
 }
+
 
 *, *::before, *::after {
     box-sizing: inherit;
@@ -51,10 +54,12 @@ body {
 .skip-link {
     position: absolute;
     color: white;
-    background-color: red;
+    background-color: var(--warning-color);
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.425);
     padding: 1rem;
     border-radius: 0 0 10px 0;
+
+    font-weight: bold;
 
     transform: translateY(-100%);
     transition: transform .8s ease-in;
@@ -94,7 +99,7 @@ small {
     align-items: center;
 
     color: #FFF;
-    background-color: rgba(0, 0, 0, 0.469);
+    background-color: var(--transparent-background-color);
 
     font-family: "Norse Bold";
     font-size: 62px;
@@ -220,7 +225,7 @@ small {
 
 .error-message {
     margin-top: 2px;
-    color: red;
+    color: var(--warning-color);
 }
 
 .invisible {
