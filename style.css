@@ -123,8 +123,8 @@ small {
     font-size: 7rem;
 }
 
-.title>img {
-    height: 80%;
+.odin-header-logo {
+    height: 10rem;
 }
 
 .photo-credit {
